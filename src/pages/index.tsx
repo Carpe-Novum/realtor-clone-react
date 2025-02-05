@@ -7,7 +7,7 @@ export default function Home() {
         <title>Realtor Clone React</title>
       </Head>
       
-      <h1>Hello World!</h1>
+      <h1>Home</h1>
     </>
   );
 }
