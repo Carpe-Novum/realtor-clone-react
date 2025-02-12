@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Link from "next/link";
 import OAuth from '@/components/OAuth';
+import Head from 'next/head';
 
 export default function ForgotPassword() {
   const [email, setEmail] = useState("");
@@ -9,6 +10,11 @@ export default function ForgotPassword() {
   }
 
   return (
+    <>
+    <Head>
+        <title>Forgot Password</title>
+    </Head>
+
     <section>
       <h1 className='text-3xl text-center mt-6 font-bold'>Forgot Password</h1>
       <div className='flex justify-center flex-wrap items-center px-6 py-12 max-w-6xl mx-auto'>
@@ -36,5 +42,6 @@ export default function ForgotPassword() {
         </div>
       </div>
     </section>
+  </>
   );
 }

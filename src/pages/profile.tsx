@@ -1,7 +1,15 @@
 import React from 'react'
+import Head from 'next/head';
 
 export default function Profile() {
   return (
-    <div>Profile</div>
+    <>
+      <Head>
+        <title>Profile</title>
+      </Head>
+
+      <div>Profile</div>
+    </>
+    
   )
 }
